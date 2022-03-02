@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuRefresh"
+        android:icon="@drawable/ic_baseline_refresh_24"
+        android:title="Refresh"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menuGameResults"
+        android:title="Game Results"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menuNewGame"
+        android:title="New Game"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menuSignIn"
+        android:title="Sign in/out"
+        app:showAsAction="never" />
+</menu>

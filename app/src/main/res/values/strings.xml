@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ScoreBoard</string>
+    <string name="rtdb_url">https://score-board-game-default-rtdb.europe-west1.firebasedatabase.app/</string>
+    <string name="table">Table</string>
+    <string name="results">Results</string>
+    <string name="games">Games</string>
+    <string name="account">Account</string>
+    <string name="new_game">New Game</string>
+    <string name="name">Name</string>
+    <string name="insert_game">Insert Game</string>
+</resources>

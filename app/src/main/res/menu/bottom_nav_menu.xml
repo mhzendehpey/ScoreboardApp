@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/table"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/table" />
+
+    <item
+        android:id="@+id/results"
+        android:icon="@drawable/ic_baseline_content_paste_24"
+        android:title="@string/results" />
+
+    <item
+        android:id="@+id/placeholder"
+        android:title="" />
+
+    <item
+        android:id="@+id/games"
+        android:icon="@drawable/ic_baseline_view_headline_24"
+        android:title="@string/games" />
+
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="@string/account" />
+
+</menu>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:showIn="@layout/activity_main_old">
+
+    <TextView
+        android:id="@+id/tvNewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="New Result"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/tvGameNight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Game Night:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edtDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtDate" />
+
+    <EditText
+        android:id="@+id/edtDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Date (DD/MM/YYYY)"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvGameNight"
+        app:layout_constraintTop_toBottomOf="@+id/tvNewResult" />
+
+    <TextView
+        android:id="@+id/tvGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game: "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spnGames"
+        app:layout_constraintStart_toStartOf="@+id/tvGameNight"
+        app:layout_constraintTop_toTopOf="@+id/spnGames" />
+
+    <Spinner
+        android:id="@+id/spnGames"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtDate"
+        app:layout_constraintStart_toEndOf="@+id/tvGame"
+        app:layout_constraintTop_toBottomOf="@+id/edtDate" />
+
+    <EditText
+        android:id="@+id/edtRankPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="2"
+        android:gravity="center"
+        android:hint="Pos."
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/tvGame"
+        app:layout_constraintTop_toTopOf="@+id/edtPlayer" />
+
+    <EditText
+        android:id="@+id/edtPlayer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Player Name"
+        android:inputType="textPersonName|textAutoComplete"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddPlayer"
+        app:layout_constraintStart_toEndOf="@+id/edtRankPosition"
+        app:layout_constraintTop_toBottomOf="@+id/spnGames" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddPlayer"
+        style="@style/AppTheme.Button.Circle.Primary.Outlined"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:icon="@drawable/ic_baseline_add_circle_outline_24"
+        app:iconSize="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/spnGames"
+        app:layout_constraintTop_toTopOf="@+id/edtPlayer"
+        app:shapeAppearanceOverlay="@style/AppTheme.Button.Circle.Primary.Outlined"
+        app:strokeWidth="0dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRankings"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnWriteResult"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddPlayer"
+        app:layout_constraintStart_toStartOf="@+id/edtRankPosition"
+        app:layout_constraintTop_toBottomOf="@+id/edtPlayer" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnWriteResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Write Result"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</merge>
