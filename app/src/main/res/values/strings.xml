@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ScoreBoard</string>
-    <string name="rtdb_url">https://score-board-game-default-rtdb.europe-west1.firebasedatabase.app/</string>
+    // TODO: replace it with your firebase realtime database url
+    <string name="rtdb_url">YOUR_RTDB_URL</string>
     <string name="table">Table</string>
     <string name="results">Results</string>
     <string name="games">Games</string>
